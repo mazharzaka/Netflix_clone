@@ -1,0 +1,64 @@
+.pic {
+  width: 100%;
+  object-fit: contain;
+  max-height: 250px;
+
+  transition: transform 480ms;
+}
+.pic_large {
+  width: 100%;
+  object-fit: contain;
+  margin-right: 20px;
+  max-height: 160px;
+}
+.pic_large.acc {
+  max-height: 140px;
+}
+.pic_large.acc:hover {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.row {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.poster {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.poster::-webkit-scrollbar {
+  display: none;
+}
+.swiper-slide:hover {
+  transform: scale(1.08) !important;
+}
+.heart,
+.heartb {
+  position: absolute;
+  color: #fff;
+  margin: 10px;
+  font-size: 19px;
+  display: none;
+}
+.swipp:hover .cover .heart,
+.swipp:hover .cover.active .heartb {
+  display: block;
+}
+
+.title {
+  text-align: left;
+  margin-left: 5px;
+  color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+.hidden {
+  display: none;
+  transition: 1s;
+}
+.hidden.active {
+  display: block;
+}
